@@ -1,0 +1,36 @@
+---
+title: "Research"
+---
+
+### Quantum algorithms for hydrological modeling
+
+Groundwater and surface-water flow simulations are expensive to run at the resolution and scale that water-management decisions need. Quantum computers may offer speedups for the large linear and differential equations at the core of these models, but it's still unclear where those speedups survive real-world details like complex geometry, heterogeneous media, boundary conditions. I'm working with scientists at the Illinois State Water Survey to develop quantum algorithms for groundwater and surface water flows and to test whether they could help on problems hydrologists actually care about.
+
+### Quantum resource estimation for nuclear structure
+
+Nuclei are strongly interacting many-body systems, and exact classical simulation becomes intractable quickly. Quantum computers are a natural fit, because the problem is quantum mechanical and the state space grows exponentially. Quantum chemistry has already produced highly optimized algorithms for exactly this kind of fermionic problem, while comparatively little algorithm and resource-estimation work targets nuclear physics. Nuclear Hamiltonians share much of that structure but add complications, such as three-body forces and no fixed background of nuclei. I'm adapting the chemistry algorithms to nuclei and estimating the qubits and gates a fault-tolerant machine would need, to find out which nuclear calculations are realistic targets.
+
+### AI-accelerated research
+
+I am very interested in exploring how AI can accelerate my research. One of my current experiments is with AI-assisted search for qLDPC codes for quantum error correction ([unitaryfoundation/qldpc-challenge](https://github.com/unitaryfoundation/qldpc-challenge)), along with verification in Lean 4 ([e-eight/qldpc-lean-verification](https://github.com/e-eight/qldpc-lean-verification/)). 
+
+## Student projects
+
+### 2026
+
+#### Empirical characterization of QAOA energy landscapes for ML-guided parameter initialization
+
+What makes shallow QAOA hard to optimize on MaxCut graphs, as opposed to what it can express at all? This project generates a dataset of graphs paired with shallow QAOA runs, and uses interpretable ML models to test whether graph features predict optimization difficulty and improved starting points.
+
+Sponsor: [NCSA SPIN](https://spin.ncsa.illinois.edu/)
+
+Student: Yijing Zuo
+
+#### Trustworthy distance evaluation for small quantum codes
+
+What evidence supports a claim about the distance of a quantum code? This project builds an exact evaluator for small CSS codes that labels every result by its evidence (witness, exhaustive exclusion, or heuristic), and tests it against independent methods and where exhaustive search stops being practical.
+
+Sponsor: [Fiddler Innovation Student Fellowship](https://www.ncsa.illinois.edu/resources-and-services/faculty-student-opportunities/fiddler-innovation-endowment/)
+
+Student: Shashank Satish
+

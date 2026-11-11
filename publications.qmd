@@ -1,0 +1,14 @@
+---
+title: "Publications"
+bibliography: ref.bib
+csl: assets/pubs.csl
+citeproc: false
+filters: [filters/bold-author.lua]
+nocite: |
+  @*
+---
+
+Also on [Google Scholar](https://scholar.google.com/citations?user=venazqsAAAAJ).
+
+::: {#refs}
+:::

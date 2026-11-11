@@ -1,0 +1,9 @@
+/*-- scss:defaults --*/
+
+// Dark colour overrides for pressmark.scss (listed after it in `theme.dark`).
+$primary-color: rgb(20, 20, 20);  // page background
+$primary-color-shade: rgb(30, 30, 30); // code blocks etc
+$highlight-color: rgb(210, 156, 174); // color highlights
+$highlight-color-shade: rgb(211, 60, 111); // hover color for buttons
+$dark : rgb(156, 156, 156);  // mostly used for borders
+$font-color: rgb(218, 218, 218); // self explanatory

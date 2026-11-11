@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Publication list format used by filters/cv.lua: "S Family, S Family. Title. Venue (year)."
+     Pandoc's citeproc links each title to its DOI or URL; the filter bolds the site owner's name. -->
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="en-US" page-range-format="expanded">
+  <info>
+    <title>CV publications</title>
+    <id>https://github.com/e-eight/port-quarto/pubs</id>
+    <updated>2026-10-08T00:00:00+00:00</updated>
+  </info>
+  <macro name="authors">
+    <names variable="author">
+      <name initialize-with="" delimiter=", "/>
+    </names>
+  </macro>
+  <macro name="title">
+    <text variable="title"/>
+  </macro>
+  <macro name="year">
+    <date variable="issued" prefix="(" suffix=")">
+      <date-part name="year"/>
+    </date>
+  </macro>
+  <macro name="venue">
+    <choose>
+      <if variable="status">
+        <group delimiter=", ">
+          <text variable="container-title"/>
+          <text value="accepted"/>
+        </group>
+      </if>
+      <else-if type="article-journal">
+        <group delimiter=", ">
+          <group delimiter=" ">
+            <text variable="container-title"/>
+            <text variable="volume"/>
+          </group>
+          <text variable="page"/>
+        </group>
+      </else-if>
+      <else-if type="paper-conference">
+        <group delimiter=", ">
+          <text variable="container-title"/>
+          <text variable="page"/>
+        </group>
+      </else-if>
+      <else-if type="thesis">
+        <group delimiter=", ">
+          <text variable="genre"/>
+          <text variable="publisher"/>
+        </group>
+      </else-if>
+      <else>
+        <text variable="publisher"/>
+      </else>
+    </choose>
+  </macro>
+  <citation>
+    <layout>
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography>
+    <layout suffix=".">
+      <group delimiter=". ">
+        <text macro="authors"/>
+        <text macro="title"/>
+        <group delimiter=" ">
+          <text macro="venue"/>
+          <text macro="year"/>
+        </group>
+      </group>
+    </layout>
+  </bibliography>
+</style>

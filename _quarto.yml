@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "Soham Pal"
+  navbar:
+    right:
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+  page-footer:
+    left: |
+      © 2026 Soham Pal, built with <a href='https://quarto.org' target='_blank'>Quarto</a> and the <a href='https://mdwm.org/quarto-pressmark/' target='_blank'>Pressmark</a> theme
+    right:
+      - text: GitHub
+        href: https://github.com/e-eight
+      - text: Scholar
+        href: https://scholar.google.com/citations?user=venazqsAAAAJ&hl=en
+      - text: ORCID
+        href: https://orcid.org/0009-0002-7954-9225
+      - text: LinkedIn
+        href: https://www.linkedin.com/in/sohampal
+      - text: Email
+        href: mailto:dssohampal@gmail.com
+
+format:
+  html:
+    theme:
+      light: pressmark.scss
+      dark: [pressmark.scss, pressmark-dark.scss]
+    toc: false
+    grid:
+      body-width: 900px
+    html-math-method: katex
+    link-external-newwindow: true

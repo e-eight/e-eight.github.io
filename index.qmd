@@ -1,0 +1,42 @@
+---
+title: "Soham Pal"
+format:
+  html:
+    grid:
+      body-width: 1200px
+about:
+  template: trestles
+  image: assets/headshot.png
+  image-alt: "Photo of Soham Pal"
+  links:
+    - icon: github
+      href: https://github.com/e-eight
+    - text: "{{< ai google-scholar >}}"
+      href: https://scholar.google.com/citations?user=venazqsAAAAJ&hl=en
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0009-0002-7954-9225
+    - icon: linkedin
+      href: https://www.linkedin.com/in/sohampal
+    - icon: envelope
+      href: mailto:dssohampal@gmail.com
+---
+
+Computational physicist and research facilitator. I am based at [NCSA](https://www.ncsa.illinois.edu/), University of Illinois Urbana-Champaign, where I develop quantum algorithms for scientific simulation and study how classical and quantum hardware should share the work. I also help researchers and students use HPC, ML, and quantum computing for their domain applications. I have a PhD in physics from Iowa State University, where I worked on electroweak operators in chiral effective field theory.
+
+## Experience
+
+- **Research Computing & Data Facilitator**, NCSA --- Feb 2025 -- Present
+- **Computing Sciences Researcher II**, University of Arizona --- Jul 2023 -- Jan 2025
+- **Research Collaborator**, Iowa State University, Sep 2023 -- April 2024
+- **Programmer Writer, AI/ML**, AWS --- May 2022 -- Jun 2023
+- **Research Assistant**, Iowa State University --- May 2016 -- Apr 2022
+
+## Education
+
+- **Iowa State University** --- PhD in Physics, 2022
+- **BITS Pilani** --- MS in Physics & BE in Electronics and Communications, 2013
+
+## Professional activities
+
+- **Qiskit Advocate**, IBM Quantum --- Sep 2020 -- Present
+- **Reviewer**, National AI Research Resource (NAIRR) Pilot --- Dec 2025 -- Present
